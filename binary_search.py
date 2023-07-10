@@ -1,4 +1,6 @@
 def binary_search(nums, target):
+    if not isinstance(nums, list):
+        raise TypeError('Only list')
     l, r = 0, len(nums) - 1
     while l <= r:
         mid = (l + r) // 2
